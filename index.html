@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)file:///D:/Downloads/clothing_shop.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Shop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #111, #222);
+      color: #eee;
+      line-height: 1.5;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+    header h1 { font-size: 1.5rem; color: #ff6f61; }
+    nav a {
+      margin-left: 1.5rem;
+      font-size: 1rem;
+      color: #eee;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ff6f61; }
+
+    .hero {
+      background: url('https://cdn.pixabay.com/photo/2016/03/27/19/40/fashion-1283863_1280.jpg') center/cover no-repeat;
+      height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ff6f61;
+    }
+    .hero-content p {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+    .hero-content a {
+      background: #ff6f61;
+      color: #fff;
+      padding: 0.9rem 2rem;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .hero-content a:hover { background: #e55a4e; }
+
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+      color: #ff6f61;
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .feature {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 1.5rem;
+      flex: 1 1 220px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+    .feature img {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+
+    /* Products */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .product {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+    .product h3 {
+      padding: 1rem;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    }
+
+    /* Contact */
+    .contact { text-align: center; }
+    .contact p { margin: 0.5rem 0; }
+
+    footer {
+      background: #000;
+      color: #888;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .features { flex-direction: column; align-items: center; }
+      .hero-content h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Clothing Shop</h1>
+    <nav>
+      <a href="file:///D:/Downloads/clothing_shop.html#features">Features</a>
+      <a href="file:///D:/Downloads/clothing_shop.html#products">Products</a>
+      <a href="file:///D:/Downloads/clothing_shop.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Style That Defines You</h2>
+      <p>Trendy, affordable, and premium-quality clothing for men and women.</p>
+      <a href="file:///D:/Downloads/clothing_shop.html#products">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="./Clothing Shop_files/892458.png" alt="Variety">
+        <h3>Variety of Styles</h3>
+        <p>Discover collections for every mood and occasion.</p>
+      </div>
+      <div class="feature">
+        <img src="./Clothing Shop_files/1160358.png" alt="Quality">
+        <h3>Premium Quality</h3>
+        <p>Get high-quality fashion at the best prices.</p>
+      </div>
+      <div class="feature">
+        <img src="./Clothing Shop_files/3135715.png" alt="Discount">
+        <h3>Seasonal Discounts</h3>
+        <p>Enjoy amazing deals all year round.</p>
+      </div>
+      <div class="feature">
+        <img src="./Clothing Shop_files/992651.png" alt="Shopping">
+        <h3>Easy Shopping</h3>
+        <p>Seamless experience with fast delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section" id="products">
+    <h2>Our Collection</h2>
+    <div class="products">
+      <div class="product">
+        <img src="./Clothing Shop_files/adult-1869119_1280.jpg" alt="Casual Jacket">
+        <h3>Casual Jacket</h3>
+      </div>
+      <div class="product">
+        <img src="./Clothing Shop_files/t-shirt-1633769_1280.jpg" alt="Trendy T-Shirt">
+        <h3>Trendy T-Shirt</h3>
+      </div>
+      <div class="product">
+        <img src="./Clothing Shop_files/people-2591918_1280.jpg" alt="Classic Jeans">
+        <h3>Classic Jeans</h3>
+      </div>
+      <div class="product">
+        <img src="./Clothing Shop_files/girl-2591870_1280.jpg" alt="Summer Dress">
+        <h3>Summer Dress</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@clothingshop.com</p>
+    <p>Instagram: @clothingshop</p>
+    <p>Phone: +91 9876543210</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Clothing Shop. All rights reserved.</p>
+  </footer>
+
+
+
+</body></html>
